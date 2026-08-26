@@ -1,0 +1,52 @@
+# Polymateria
+
+> Polymateria Ltd is a British materials-science company based at the Imperial College I-HUB,
+> White City Campus, London. It develops Biotransformation, a masterbatch additive blended into
+> polyethylene and polypropylene at roughly 2% by weight so that plastic escaping a waste stream
+> weathers into a bioavailable wax and fully biodegrades in the open environment without leaving
+> microplastics. Polymateria co-authored BSI PAS 9017, the first standard for measuring the
+> biodegradability of polyolefins.
+
+## What an agent should know first
+
+Polymateria sells a chemical additive, not software. As of 2026-08-26 it operates **no public API,
+no developer portal, no SDK, and no machine-readable API contract**. Contract discovery was run
+against every host the company controls (www.polymateria.com plus the api/docs/developer/app/portal
+subdomains, all of which are NXDOMAIN) and found no OpenAPI, GraphQL, MCP or A2A surface. There is
+nothing here for an agent to call. Commercial contact is a human one: info@polymateria.com.
+
+The one machine-readable surface on the domain is the stock WordPress REST API at
+https://www.polymateria.com/wp-json/ — the CMS behind the marketing site, not a Polymateria
+product. Do not treat it as a company API.
+
+## Company
+
+- [Polymateria](https://www.polymateria.com/): Corporate website.
+- [What is Biotransformation](https://www.polymateria.com/about-us/what-is-biotransformation/): How the technology works.
+- [Our technology](https://www.polymateria.com/our-technology/): Products and performance data.
+- [FAQs](https://www.polymateria.com/our-technology/faqs/): Common technical questions.
+- [Newsroom](https://www.polymateria.com/media-centre/newsroom/): Company news.
+- [Publications](https://www.polymateria.com/media-centre/publications/): Papers and third-party results.
+- [Careers](https://www.polymateria.com/careers/current-opportunities/): Open roles.
+- [Get in touch](https://www.polymateria.com/contacts/get-in-touch/): Contact.
+
+## Credentialed surfaces
+
+- [Customer portal](https://www.polymateria.com/customer-portal/): Username/password login that serves third-party test datasets as documents to existing customers. Access is requested by emailing info@polymateria.com. It is a document portal, not an API.
+
+## Feeds
+
+- [Site RSS](https://www.polymateria.com/feed/): RSS 2.0 feed of site posts.
+- [Sitemap index](https://www.polymateria.com/sitemap_index.xml): Yoast sitemap index.
+
+## Policies
+
+- [Terms and Conditions of Supply and Purchase](https://www.polymateria.com/terms-and-conditions-of-supply-and-purchase/)
+- [Privacy & Cookies Notice](https://www.polymateria.com/privacy-and-cookies/)
+- [Accessibility](https://www.polymateria.com/accessibility/)
+
+## Profile artifacts (API Evangelist)
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/polymateria/refs/heads/main/apis.yml): This profile in APIs.json format.
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/polymateria/refs/heads/main/security/polymateria-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC observed 2026-08-26.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/polymateria/refs/heads/main/well-known/polymateria-well-known.yml): Recorded absence of every /.well-known/ discovery document.

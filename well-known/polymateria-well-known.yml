@@ -1,0 +1,64 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of https://www.polymateria.com/.well-known/*
+note: >-
+  Polymateria publishes no API host. apis.yml carries no apis[] entries and no OpenAPI
+  servers[] block, so the only host with a discovery surface worth probing is the corporate
+  website, www.polymateria.com. Every /.well-known/ path returned a real HTTP 404 rendered by
+  the site's WordPress 404 template (~60KB) — this host is NOT a 200-answering SPA catch-all,
+  the negatives below are genuine. hit_count is 0, so NO WellKnown and NO SecurityTxt pointer
+  is emitted in apis.yml; this file records an absence, not a presence.
+hit_count: 0
+hosts:
+- host: https://www.polymateria.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-contract-discovery:
+  note: >-
+    STEP 0b contract discovery, run against every host this company is known to control.
+    No REST OpenAPI, no GraphQL endpoint, no MCP server and no A2A agent card were found.
+    The one machine-readable surface the host serves is the stock WordPress REST API at
+    /wp-json/ — 430 routes across 25 namespaces, all of them WordPress core plus site
+    plugins (Yoast, LiteSpeed, iThemes Security, Redirection, Kadence, WP Offload Media).
+    It describes the marketing website's CMS, not a Polymateria product, so it is recorded
+    here and deliberately NOT saved to openapi/ or wired as a contract.
+  probes:
+  - url: https://www.polymateria.com/openapi.json
+    status: 404
+  - url: https://www.polymateria.com/swagger.json
+    status: 404
+  - url: https://www.polymateria.com/api-docs
+    status: 404
+  - url: https://www.polymateria.com/docs
+    status: 404
+  - url: https://www.polymateria.com/llms.txt
+    status: 404
+  - url: https://www.polymateria.com/wp-json/
+    status: 200
+    note: WordPress core REST API index; CMS surface of the marketing site, not a product API
+  dns:
+  - host: api.polymateria.com
+    result: NXDOMAIN
+  - host: docs.polymateria.com
+    result: NXDOMAIN
+  - host: developer.polymateria.com
+    result: NXDOMAIN
+  - host: developers.polymateria.com
+    result: NXDOMAIN
+  - host: app.polymateria.com
+    result: NXDOMAIN
+  - host: portal.polymateria.com
+    result: NXDOMAIN

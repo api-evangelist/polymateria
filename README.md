@@ -64,5 +64,8 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Polymateria is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Polymateria Ltd is a British materials-science company based at the Imperial College I-HUB, White City Campus, London. It develops Biotransformation, a masterbatch additive blended into polyethylene and polypropylene at roughly 2% by weight so that plastic escaping a waste stream weathers into a bioavailable wax and fully biodegrades in the open environment without leaving microplastics behind. The company co-authored BSI PAS 9017, the first standard for measuring the biodegradability of polyolefins.
+
+Polymateria sells a chemical additive, not software. A full contract-discovery pass on 2026-08-26 found no public API, developer portal, SDK, OpenAPI/GraphQL/AsyncAPI contract, MCP server or A2A agent card on any host the company controls. See the `x-coverage` block in `apis.yml` for the probes behind that finding.
+
+- https://www.polymateria.com/
