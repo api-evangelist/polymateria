@@ -12,6 +12,17 @@ description: 'Polymateria Ltd is a British materials-science company, based at t
   media site, and the only credentialed surface it operates is a customer portal that serves
   third-party test datasets as documents. No developer program, public API, SDK or
   machine-readable API contract of any kind was found in this pass.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://wp-polymateria-2020.s3.eu-west-2.amazonaws.com/media/2019/02/polymateria-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/polymateria/refs/heads/main/apis.yml
 x-type: company
