@@ -64,8 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Polymateria Ltd is a British materials-science company based at the Imperial College I-HUB, White City Campus, London. It develops Biotransformation, a masterbatch additive blended into polyethylene and polypropylene at roughly 2% by weight so that plastic escaping a waste stream weathers into a bioavailable wax and fully biodegrades in the open environment without leaving microplastics behind. The company co-authored BSI PAS 9017, the first standard for measuring the biodegradability of polyolefins.
+Polymateria Ltd is a British materials-science company, based at the Imperial College I-HUB on the White City Campus in London, that develops Biotransformation — a masterbatch additive blended into polyethylene and polypropylene at roughly 2% by weight so that plastic which escapes a waste stream weathers into a bioavailable wax and fully biodegrades in the open environment without leaving microplastics behind. The company co-authored BSI PAS 9017, the first standard for measuring the biodegradability of polyolefins, is a World Economic Forum Technology Pioneer and a Terra Carta signatory, and sells to converters, brand owners and packaging manufacturers rather than to developers. Its product is a chemical additive, not software: the public website is a WordPress marketing and media site, and the only credentialed surface it operates is a customer portal that serves third-party test datasets as documents. No developer program, public API, SDK or machine-readable API contract of any kind was found in this pass.
 
-Polymateria sells a chemical additive, not software. A full contract-discovery pass on 2026-08-26 found no public API, developer portal, SDK, OpenAPI/GraphQL/AsyncAPI contract, MCP server or A2A agent card on any host the company controls. See the `x-coverage` block in `apis.yml` for the probes behind that finding.
+**Areas:** Company · Materials Science · Plastics · Biodegradable Plastics · Sustainability · Chemicals · Packaging · Circular Economy · Manufacturing
 
-- https://www.polymateria.com/
+## Polymateria on APIs.io
+
+Everything profiled for Polymateria is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/polymateria/](https://apis.io/providers/polymateria/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Polymateria Domain Security](https://apis.io/security/polymateria/polymateria-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.polymateria.com/)
+- [Support](https://www.polymateria.com/contacts/get-in-touch/)
+- [Blog](https://www.polymateria.com/media-centre/newsroom/)
+- [Terms of service](https://www.polymateria.com/terms-and-conditions-of-supply-and-purchase/)
+- [Privacy policy](https://www.polymateria.com/privacy-and-cookies/)
+
+## API Evangelist rating
+
+**Kin Score 11.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/polymateria/](https://apis.io/providers/polymateria/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Polymateria: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/polymateria/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
